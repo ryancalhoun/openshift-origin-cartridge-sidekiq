@@ -13,7 +13,7 @@ This cartridge also provide Sidekiq [monitoring web interface](https://github.co
 ## Installation
 
 1. [Create your OpenShift account](https://openshift.redhat.com/app/account/new)
-2. Create `ruby-1.9` application: `rhc app create myapp ruby-1.9`
+2. Create `ruby-2.0` application: `rhc app create myapp ruby-2.0`
 3. Add **Redis** cartridge to your application:
 
 ```
