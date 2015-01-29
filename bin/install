@@ -2,7 +2,7 @@
 
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 
-SIDEKIQ_VERSION="2.17.3"
+SIDEKIQ_VERSION="3.3.1"
 
 if [ -z "${OPENSHIFT_RUBY_DIR}" ]; then
   client_result ""
@@ -23,6 +23,7 @@ if ! have_redis; then
 fi
 
 ruby_context "gem install sidekiq --no-ri --no-rdoc --version=${SIDEKIQ_VERSION}"
+ruby_context "gem install sinatra --no-ri --no-rdoc"
 
 mkdir -p ${OPENSHIFT_SIDEKIQ_DIR}log
 mkdir -p ${OPENSHIFT_SIDEKIQ_DIR}run

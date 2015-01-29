@@ -10,12 +10,10 @@ whether it is Rails or other Rack compatible app.
 
 This cartridge also provide Sidekiq [monitoring web interface](https://github.com/mperham/sidekiq/wiki/Monitoring)
 
-![monitoring](https://raw2.github.com/openshift-cartridges/openshift-origin-cartridge-sidekiq/master/doc/sidekiq.png "Logo Title Text 1")
-
 ## Installation
 
 1. [Create your OpenShift account](https://openshift.redhat.com/app/account/new)
-2. Create `ruby-1.9` application: `rhc app create myapp ruby-1.9`
+2. Create `ruby-2.0` application: `rhc app create myapp ruby-2.0`
 3. Add **Redis** cartridge to your application:
 
 ```
@@ -25,7 +23,7 @@ rhc add-cartridge http://cartreflect-claytondev.rhcloud.com/reflect?github=smart
 4. Finally, add **Sidekiq** cartridge to your application:
 
 ```
-rhc add-cartridge https://raw2.github.com/openshift-cartridges/openshift-origin-cartridge-sidekiq/0.0.3/metadata/manifest.yml --app myapp
+rhc add-cartridge http://cartreflect-claytondev.rhcloud.com/github/pranavpr/openshift-origin-cartridge-sidekiq --app myapp
 ```
 
 Now, everything should be properly configured and you should be able to add your
