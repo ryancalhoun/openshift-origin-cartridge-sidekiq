@@ -19,7 +19,7 @@ function ruby_context_with_gempath() {
 }
 
 function have_redis() {
-  [ -n "${OPENSHIFT_REDIS_DIR}" ]
+  [ -n "${OPENSHIFT_REDIS_DB_HOST}" ]
 }
 
 function use_rails() {
