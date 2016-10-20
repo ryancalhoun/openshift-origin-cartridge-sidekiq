@@ -17,9 +17,6 @@ Website: https://github.com/pranavpr/openshift-origin-cartridge-sidekiq
 Provides:
 - sidekiq-3.3.1
 - sidekiq
-Scaling:
-  Min: 1
-  Max: -1
 Group-Overrides:
 - components:
   - sidekiq
