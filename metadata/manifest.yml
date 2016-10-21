@@ -7,13 +7,13 @@ Version: '3.3.1'
 Versions:
 - '3.3.1'
 Cartridge-Version: 0.0.4
-Cartridge-Vendor: pranavpr
+Cartridge-Vendor: ryancalhoun
 License: GPL
-Vendor: pranavpr
+Vendor: sidekiq
 Categories:
 - embedded
 - plugin
-Website: https://github.com/pranavpr/openshift-origin-cartridge-sidekiq
+Website: https://github.com/ryancalhoun/openshift-origin-cartridge-sidekiq
 Provides:
 - sidekiq-3.3.1
 - sidekiq
